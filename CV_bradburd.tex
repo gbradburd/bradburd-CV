@@ -1,155 +1,221 @@
 %COMPILE WITH XeLaTeX
-\documentclass{res}
-\setlength{\topmargin}{-1.0in}  
-\setlength{\textheight}{9.8in}  
-\setlength{\headsep}{0.2in}     
-\setlength{\headheight}{10pt}   
-\usepackage{fancyhdr}
+\documentclass{article}
+\usepackage[charter]{mathdesign}
+%\usepackage{times}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{array}
+\hypersetup{colorlinks,urlcolor=blue}
+\usepackage[margin=1in]{geometry}
 \usepackage{setspace}
 \usepackage{fontspec}
 \setmainfont{Corbel}
-\renewcommand{\headrulewidth}{0pt} 
-
-
-\cfoot{}  
-\pagestyle{fancy} 
-\newenvironment{myindentpar}[1]%
-    {\begin{list}{}%
-             {\setlength{\leftmargin}{#1}}%
-             \item[]}
-    {\end{list}}
-    
-    
-\begin{document} 
-\thispagestyle{empty} 
-
-\begin{resume}
-
-
-
-\begin{center}
-\begin{large}
-\textbf{Gideon Bradburd\\
-\vspace{2mm}
-Curriculum Vitae}
-\end{large}
-\end{center}
+\usepackage{breakurl}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.295\textwidth}}
+\setlength{\parindent}{0in}
+\usepackage[bottom]{footmisc}
+\usepackage{tabularx}
+\usepackage{array}
+\begin{document}
+\pagenumbering{gobble}
 %
-\vspace{-0.5cm}
-\noindent\makebox[\linewidth]{\rule{18cm}{0.4pt}}
+\begin{huge}
+\bf{Gideon Bradburd}\
+\end{huge}
+\vspace{-0.25cm}
+\\
 %
-\section{\textbf{Contact Information}}
-Address: \hspace{43mm} 3348 Storer Hall\\
-\hspace*{57mm} Evolution and Ecology\\
-\hspace*{57mm} University of California, Davis\\
-\hspace*{57mm} One Shields Avenue\\
-\vspace{10pt}\hspace*{57mm} Davis, CA 95616\\
-Phone: \hspace{46mm}w. 530-752-1112\\
-\vspace{10pt}\hspace*{57mm} c. 203-687-5224\\
-Email: \hspace{45mm} gbradburd@ucdavis.edu\\
-\noindent\makebox[\linewidth]{\rule{18cm}{0.4pt}}
-
-\section{\underline{EDUCATION}}
-\textbf{University of California at Davis}, Davis, CA	(2009-present)\\
-\vspace{3mm}
-\hspace{6mm}{Ph.D. Candidate, Population Biology Graduate Group}\\
-\textbf{Yale University}, New Haven, CT	(2004-2008)\\
-\vspace{3mm}
-\hspace{6mm}{Class of 2008, Ecology and Evolutionary Biology, B.S., GPA: 3.62}
+\vspace{-0.7cm}
+\rule{470pt}{0.4pt}
+%\noindent\makebox[\linewidth]{\rule{18cm}{0.4pt}}
+\vspace{0.3cm}
 %
-\section{\underline{PUBLICATIONS}}
-\textbf{Bradburd, G.S.}, P.L. Ralph, and G.M. Coop. Disentangling the effects of geographic and ecological isolation on genetic differentiation. Evolution 67(11):3258-3273.
-
-Rejmanek, D, P. Freycon, \textbf{G.S. Bradburd}, J. Dinstell, and J. Foley.  Unique strains of \textit{Anaplasma phagocytophilum} segregate among diverse questing and non-questing \textit{Ixodes} tick species in the western United States.  Ticks and Tick-borne Diseases 4(6):482-487.
-
-Rejmanek, D., \textbf{G.S. Bradburd}, and J. Foley.  2012.  Molecular characterization reveals	distinct genospecies of \textit{Anaplasma phagocytophilum} from diverse North American hosts.	Journal of Medical Microbiology. 61(2):204-212.
-
-Near, T.J., C.M. Bossu, \textbf{G.S. Bradburd}, R.L. Carlson, R.C. Harrington, P.R. Hollingsworth	Jr., B.P. Keck, D.A. Etnier. 2011.  Phylogeny and temporal diversification of darters (\textit{Percidae: Etheostomatinae}).  Systematic Biology 60(5):565-595.
-
-\section{\underline{FELLOWSHIPS AND AWARDS}}
-\textbf{NSF Doctoral Dissertation Improvement Grant (DDIG)}, National Science Foundation, 2014-2015.\\
-\textbf{Center for Population Biology Research Fellowship} Center for Population Biology, UC Davis, 2012-13.\\
-\textbf{Center for Population Biology Research Fellowship} Center for Population Biology, UC Davis, 2011-12.\\
-\textbf{NSF Graduate Research Fellow} National Science Foundation, 2010-'12\\ \vspace{0.3mm}
-\textbf{Graduate Scholars Fellowship} in Population Biology, UC Davis, 2009-'10\\ \vspace{0.3mm}
-\hspace{4.5mm}Awarded in recognition of outstanding academic record and promise of productive scholarship\\
-\textbf{Integrative Biology Fellowship} UT Austin, 2009-'10 (declined)\\ \vspace{0.3mm}
-\hspace{4.5mm}Awarded to top applicants in the UT system\\
-\textbf{Dorothy Clark Lettice Fellowship} Kansas University, 2009-'10 (declined)\\  \vspace{0.3mm}
-\hspace{4.5mm}Awarded in recognition of high academic ability\\
-\textbf{Environmental Internship Award} Yale University, Summer 2007\\ 
-\textbf{Richter Summer Travel Fellowship} Yale University, Summer 2007\\
-\textbf{Mellon Forum Research Grant} Yale University, Summer 2007\\
-\textbf{Environmental Internship Award} Yale University, Summer 2006\\
-
-\section{\underline{INVITED TALKS}}
-
-\textbf{Bradburd, G.S.}, P. Ralph, G. Coop. The Spatial Context of Genetic Admixture.  2014.  University of Montana.
-
-\textbf{Bradburd, G.S.}, P. Ralph, G. Coop.  A Spatial Framework for Studying Genetic Differentiation.  2014.  University of Minnesota.
-
-\textbf{Bradburd, G.S.} Disentangling the effects of geographic and ecological isolation on genetic differentiation.  2014.  Sonoma State University.
-
-\textbf{Bradburd, G.S.} \textit{BEDASSLING} your data: background and functions of the R package \textit{BEDASSLE}.  RAD-seq Seminar. 2013. UT Austin.
-
-
-\section{\underline{CONTRIBUTED PRESENTATIONS}}
-\textbf{Society for Molecular Biology and Evolution}: 2014\\
-\textbf{Society for the Study of Evolution}: 2013,2014\\
-\textbf{CPB Dept. Seminar}:2011,2013\\
-\textbf{E\&EB Senior Symposium, Yale University}: 2008\\
-
-%\textbf{Bradburd, G.S.}, P.L. Ralph, G.M. Coop.   Disentangling the effects of geographic and ecological isolation on genetic differentiation.  Society for the Study of Evolution. 2013. Snowbird, Utah.\
-
-%\textbf{Bradburd, G.S.}  P.L. Ralph, B.Moore, G.M. Coop. A Bayesian method for estimating genetic differentiation due to isolation %by geographic and ecological distance.  Society for the Study of Evolution. 2013. Ottawa, Canada.\
-
-%\textbf{Bradburd, G.S.} Retrieving lost evolutionary history from an extinct darter species.  Ecology and Evolutionary Biology Senior Symposium, Yale University, 2008.
-
-%\textbf{Bradburd, G.S.}, B.Moore, G.M. Coop, J.E. Foley. Molecular ecology of two tick-borne pathogens in California.  Center for Population Biology Departmental Seminar. 2011. UC Davis.\
-
-\section{\underline{SERVICE}}
-\textbf{Course Organizer}, The Bodega Bay Applied Phylogenetics Workshop (2012-present).\\
+\\
+3348 Storer Hall \hfill email: \href{mailto:gbradburd@ucdavis.edu}{gbradburd@ucdavis.edu}\\
+Evolution and Ecology, UC Davis \hfill phone: 203-687-5224\\
+One Shields Ave, Davis, CA 95616 \hfill website: \href{http://genescape.org}{genescape.org}\\
+\vspace{-0.6cm}
 %
-\textbf{Chair}, Center for Population Biology/Population Biology Grad Group Student Research Symposium (2013).\\
+\section*{EDUCATION}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
 %
-\textbf{Student Representative}, Population Biology Grad Group Steering Committee(2013-present).\\
+\begin{tabular}{@{}p{0.05\textwidth}p{0.6\textwidth}R@{}}
+\\
+\bf{PhD} & \it{University of California, Davis}  & Sept. 2009 -- Present \\
+ & \hspace{0.5cm}Population Biology Graduate Group & \\
+ & \hspace{0.5cm}Department of Ecology and Evolutionary Biology & \\
+ & \hspace{0.5cm}Advisors: Graham Coop, Brad Shaffer & \\ 
+\textbf{BS} & \it{Yale University} & Sept. 2004 -- May 2008 \\
+& \hspace{0.5cm}Ecology and Evolutionary Biology & \\
+& \hspace{0.5cm}Honors Thesis Advisor: Tom Near & \\
+\end{tabular}
 %
-\textbf{Graduate Student Mentor} (2009-present). \\
+\section*{PUBLICATIONS}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
 %
-\textbf{Chair}, UC Davis Non-Model Genomics Workshop Committee (2010).
+
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.85\textwidth}p{0.1\textwidth}}
+\hfill\\
+Wang, I.J.* and \textbf{G.S. Bradburd}.* Isolation by Environment. \underline{Molecular Ecology}  & \hfill (\textit{in press})\\
+\hspace{4.5mm} *denotes equal authorship&\\
 %
-\section{\underline{REVIEWER}}
+\vspace{-0.1cm}
+%
+\textbf{Bradburd, G.S.}, P.L. Ralph, and G.M. Coop. Disentangling the effects of geographic and ecological isolation on genetic differentiation. \underline{Evolution}. & \hfill 2013 \\
+%
+\vspace{-0.1cm}
+%
+Rejmanek, D, P. Freycon, \textbf{G.S. Bradburd}, J. Dinstell, and J. Foley.  Unique strains of \textit{Anaplasma phagocytophilum} segregate among diverse questing and non-questing \textit{Ixodes} tick species in the western United States.  \underline{Ticks and Tick-borne Diseases}. & \hfill 2012\\
+%
+\vspace{-0.1cm}
+%
+Rejmanek, D., \textbf{G.S. Bradburd}, and J. Foley.  Molecular characterization reveals distinct genospecies of \textit{Anaplasma phagocytophilum} from diverse North American hosts.	\underline{Journal of Medical Microbiology}. & \hfill 2012\\
+%
+\vspace{-0.1cm}
+%
+Near, T.J., C.M. Bossu, \textbf{G.S. Bradburd}, R.L. Carlson, R.C. Harrington, P.R. Hollingsworth	Jr., B.P. Keck, D.A. Etnier.  Phylogeny and temporal diversification of darters (\textit{Percidae: Etheostomatinae}).  \underline{Systematic Biology}. & \hfill 2011\\
+%
+\end{tabular}
+
+\section*{GRANTS AND FELLOWSHIPS}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+%
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.85\textwidth}p{0.1\textwidth}}
+\hfill\\
+\textbf{NSF Doctoral Dissertation Improvement Grant (DDIG)}, National Science Foundation (\$13,918) & \hfill 2014-2015.\\
+\textbf{Center for Population Biology Research Fellowship} CPB, UC Davis (\$2,000) & \hfill 2012-13.\\
+\textbf{Center for Population Biology Research Fellowship} CPB, UC Davis (\$2,000) & \hfill 2011-12.\\
+\textbf{NSF Graduate Research Fellow} National Science Foundation (\$90,000) & \hfill 2010-'12\\
+\textbf{Graduate Scholars Fellowship} in Population Biology, UC Davis (\$30,000) & \hfill  2009-'10\\
+%\hspace{4.5mm}Awarded in recognition of outstanding academic record and promise of productive scholarship\\
+\textbf{Environmental Internship Award} Yale University (\$4,000) & \hfill 2007\\ 
+\textbf{Richter Summer Travel Fellowship} Yale University (\$1,000)  & \hfill 2007\\
+\textbf{Mellon Forum Research Grant} Yale University (\$500) & \hfill 2007\\
+\textbf{Environmental Internship Award} Yale University (\$2,000) & \hfill 2006\\
+\end{tabular}
+%
+%\newpage
+%
+\section*{TEACHING EXPERIENCE}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+%
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.85\textwidth}p{0.1\textwidth}}
+\hfill\\
+UCLA/La Kretz Center Workshop in Conservation Genomics & 2014 \\
+EVE103 Macroevolution, Speciation, and Phylogeny (Lecture, Lab)& 2014 \\
+Herpetology (Field, Lab, Lecture) & 2012\\
+Bodega Bay Applied Phylogenetics Workshop & 2011-2013\\
+\end{tabular}
+%
+%
+\section*{INVITED TALKS}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+%
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.85\textwidth}p{0.1\textwidth}}
+\hfill\\
+\textbf{Bradburd, G.S.}, P. Ralph, G. Coop. A new approach to the geography of genetic structure. & \hfill 2014 \\
+\hspace{1cm} University of Southern California.\\
+%
+\textbf{Bradburd, G.S.}, P. Ralph, G. Coop. The spatial context of genetic admixture. & \hfill 2014 \\
+\hspace{1cm} University of Montana.\\
+%
+\textbf{Bradburd, G.S.}, P. Ralph, G. Coop.  A spatial framework for studying genetic differentiation.  & \hfill 2014 \\
+\hspace{1cm} University of Minnesota.\\
+%
+\textbf{Bradburd, G.S.} The effects of geographic and ecological isolation on genetic differentiation. & \hfill 2014 \\
+\hspace{1cm} Sonoma State University. \\
+%
+\textbf{Bradburd, G.S.} \textit{BEDASSLING} your data: background and functions of the R package \textit{BEDASSLE}.  & \hfill 2013 \\
+\hspace{1cm} University of Texas, Austin\\
+\end{tabular}
+%
+\section*{CONTRIBUTED PRESENTATIONS}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.85\textwidth}p{0.1\textwidth}}
+\hfill\\
+\textbf{Society for Molecular Biology and Evolution} & \hfill 2014\\
+\textbf{Society for the Study of Evolution} & \hfill 2013,2014\\
+\textbf{CPB Dept. Seminar} & \hfill 2011,2013\\
+\textbf{E\&EB Senior Symposium, Yale University} & \hfill 2008\\
+\end{tabular}
+
+\section*{SERVICE}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.8\textwidth}p{0.15\textwidth}}
+\hfill\\
+\textbf{Course Organizer}, The Bodega Bay Applied Phylogenetics Workshop & \hfill 2012-2014.\\
+%
+\textbf{Student Representative}, Population Biology Grad Group Steering Committee & \hfill 2013-2014.\\
+%
+\textbf{Chair of Student Research Symposium}, Center for Population Biology/Pop Bio Grad Group & \hfill 2013.\\
+%
+\textbf{Chair}, UC Davis Non-Model Genomics Workshop Committee & \hfill 2010.\\
+%
+\textbf{Graduate Student Mentor} & \hfill 2009-present. \\
+%
+\end{tabular}
+%
+\section*{REVIEWER}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+\\\\
 \textbf{Evolution}, 
 \textbf{Methods in Ecology and Evolution}, 
 \textbf{Diversity and Distributions},
 \textbf{Integrative and Comparative Biology}
+\textbf{Bioinformatics}
 
-\section{\underline{Society Memberships}}
+\section*{SOCIETY MEMBERSHIPS}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+\\\\
 \textbf{Society for the Study of Evolution},
 
-\section{\underline{WORK EXPERIENCE}}
-\textbf{Research Assistant, Prof. Thomas Near, Yale University} 2008-'09 \\ \vspace{0.3mm}	%(40 hrs/wk)
-\hspace{4.5mm}Carried out research on phylogeography of North American fishes\\
-\textbf{Technician, Yale Peabody Museum of Natural History} 2007-'08 \\ \vspace{0.3mm}	%(8 hrs/wk)
-\hspace{4.5mm}Identified and sorted vertebrate specimens\\ 
-\textbf{Lab Technician, Marine Biology Lab, Prof. Leo Buss} Summer 2005 \\ \vspace{0.3mm}	%(25 hrs/wk)
-\hspace{4.5mm}Maintained populations of \textit{Hydractinia echinata} and \textit{Nematostella vectensis} 
+\section*{PREVIOUS APPOINTMENTS}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.8\textwidth}p{0.15\textwidth}}
+\hfill\\
+\textbf{Research Assistant, Prof. Thomas Near, Yale University} & \hfill 2008-2009 \\ 
+\hspace{4.5mm}Carried out research on phylogeography of North American fishes & \\
+%
+\textbf{Technician, Yale Peabody Museum of Natural History} & \hfill 2007-2008 \\ 
+\hspace{4.5mm}Identified and sorted vertebrate specimens&\\ 
+%
+\textbf{Lab Technician, Marine Biology Lab, Prof. Leo Buss} & \hfill 2005 \\ 
+\hspace{4.5mm}Maintained populations of \textit{Hydractinia echinata} and \textit{Nematostella vectensis}&
+\end{tabular}
 
-\section{\underline{FIELDWORK}}
-\textbf{Northern California}, 2010-2012\\\vspace{0.3mm}
+
+\section*{FIELDWORK}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.8\textwidth}p{0.15\textwidth}}
+\hfill\\
+\textbf{Northern California} & \hfill 2010-2012\\
 \hspace{4.5mm}Sampled tissue and ectoparasites from lizards and small rodents.\\
-\textbf{American Southeast and Midwest} Summer, Fall 2008\\ \vspace{0.3mm}
-\hspace{4.5mm}Sampled streams for Cyprinids, Centrarchids, and Percids throughout the Mississippi Drainage.\\
-\textbf{Costa Rica} Summer 2007\\ \vspace{0.3mm}
-\hspace{4.5mm}Collected reptiles and amphibians in the Costa Rican rainforest for the Yale Peabody Museum.\\ \vspace{0.3mm}
-\hspace{4.5mm}Developed skills in collecting and preserving herpetological specimens.\\\vspace{0.3mm}
-\hspace{4.5mm}Monitored status of last known population of the Variable Harlequin Toad (\textit{Atelopus varius}).\\
-\textbf{Suriname} Summer 2006\\ \vspace{0.3mm}
-\hspace{4.5mm}Collected birds in coastal and southern Suriname for the Yale Peabody Museum.\\ \vspace{0.3mm}
-\hspace{4.5mm}Developed skills in collecting (mist-netting, shooting) and preserving ornithological specimens.\\ \vspace{0.3mm} 
-\hspace{4.5mm}(anatomicals, skeletons, skins).\\ 
+%
+\textbf{American Southeast and Midwest} & \hfill 2008\\ 
+\hspace{4.5mm}Sampled freshwater fish throughout the Mississippi Drainage.\\
+%
+\textbf{Costa Rica}  & \hfill  2007\\ 
+\hspace{4.5mm}Collected reptiles and amphibians in the rainforest for the Yale Peabody Museum.\\ 
+\hspace{4.5mm}Developed skills in collecting and preserving herpetological specimens.\\
+\hspace{4.5mm}Monitored status of the Variable Harlequin Toad (\textit{Atelopus varius}).\\
+%
+\textbf{Suriname}  & \hfill  2006\\
+\hspace{4.5mm}Collected birds in coastal and southern Suriname for the Yale Peabody Museum.\\ 
+\hspace{4.5mm}Developed skills in collecting (mist-netting, shooting) and preserving ornithological specimens.(anatomicals, skeletons, skins).\\ 
+\end{tabular}
 
-
+\end{document}
 
 
 
@@ -157,10 +223,26 @@ Near, T.J., C.M. Bossu, \textbf{G.S. Bradburd}, R.L. Carlson, R.C. Harrington, P
 \textbf{Spanish}: proficient speaking and reading\\
 \textbf{Sranan Tongo (Taki-taki)}: fair, but only in the context of collecting specimens in the field
 
+%\end{resume}
 
 
-\end{resume}
-\end{document}
+%GRAVEYARD
+\textbf{Bradburd, G.S.}, P.L. Ralph, and G.M. Coop. Disentangling the effects of geographic and ecological isolation on genetic differentiation. Evolution 67(11):3258-3273.
+%
+Rejmanek, D, P. Freycon, \textbf{G.S. Bradburd}, J. Dinstell, and J. Foley.  Unique strains of \textit{Anaplasma phagocytophilum} segregate among diverse questing and non-questing \textit{Ixodes} tick species in the western United States.  Ticks and Tick-borne Diseases 4(6):482-487.
+%
+Rejmanek, D., \textbf{G.S. Bradburd}, and J. Foley.  2012.  Molecular characterization reveals	distinct genospecies of \textit{Anaplasma phagocytophilum} from diverse North American hosts.	Journal of Medical Microbiology. 61(2):204-212.
+%
+Near, T.J., C.M. Bossu, \textbf{G.S. Bradburd}, R.L. Carlson, R.C. Harrington, P.R. Hollingsworth	Jr., B.P. Keck, D.A. Etnier. 2011.  Phylogeny and temporal diversification of darters (\textit{Percidae: Etheostomatinae}).  Systematic Biology 60(5):565-595.
+
+
+%\cfoot{}  
+%\pagestyle{fancy} 
+%\newenvironment{myindentpar}[1]%
+%   {\begin{list}{}%
+%             {\setlength{\leftmargin}{#1}}%
+%             \item[]}
+%    {\end{list}}
 
 %\textbf{Relevant Coursework}
 %\begin{myindentpar}{6mm}
@@ -169,6 +251,10 @@ Near, T.J., C.M. Bossu, \textbf{G.S. Bradburd}, R.L. Carlson, R.C. Harrington, P
 %Yale: General Chemistry (w/ lab), General Physics, General Ecology, Evolutionary Biology, Diversity of Life, Molecular Systematics (intensive lab), %Genetics, Conservation Genetics, Phylogenetic Methods and Approaches, Biology of Terrestrial Arthropods (w/ lab), Ornithology (w/ lab), %Introductory Geoscience, Petrology and Mineralogy, Natural Resources and Sustainability
 %\end{myindentpar}
 
+\textbf{Integrative Biology Fellowship} UT Austin, 2009-'10 (declined)\\ \vspace{0.3mm}
+\hspace{4.5mm}Awarded to top applicants in the UT system\\
+\textbf{Dorothy Clark Lettice Fellowship} Kansas University, 2009-'10 (declined)\\  \vspace{0.3mm}
+\hspace{4.5mm}Awarded in recognition of high academic ability\\
 
 %\section{\underline{VOLUNTEER AND LEADERSHIP EXPERIENCE}}
 %\textbf{Yale Freshman Outdoor Orientation Trips (FOOT) Leader} 2005-'07\\ \vspace{0.3mm}
@@ -188,3 +274,11 @@ Near, T.J., C.M. Bossu, \textbf{G.S. Bradburd}, R.L. Carlson, R.C. Harrington, P
 %\hspace{4.5mm}reference to substance and relationship abuse, nutrition, and sexual health\\
 %\textbf{DEMOS Classroom Volunteer, Lincoln-Bassett Elementary School, New Haven} 2004-'05\\ \vspace{0.3mm}
 %\hspace{4.5mm}Demonstrated basic scientific principles in a fun and accessible way\\ 
+%\textbf{Bradburd, G.S.}, P.L. Ralph, G.M. Coop.   Disentangling the effects of geographic and ecological isolation on genetic differentiation.  Society for the Study of Evolution. 2013. Snowbird, Utah.\
+
+%\textbf{Bradburd, G.S.}  P.L. Ralph, B.Moore, G.M. Coop. A Bayesian method for estimating genetic differentiation due to isolation %by geographic and ecological distance.  Society for the Study of Evolution. 2013. Ottawa, Canada.\
+
+%\textbf{Bradburd, G.S.} Retrieving lost evolutionary history from an extinct darter species.  Ecology and Evolutionary Biology Senior Symposium, Yale University, 2008.
+
+%\textbf{Bradburd, G.S.}, B.Moore, G.M. Coop, J.E. Foley. Molecular ecology of two tick-borne pathogens in California.  Center for Population Biology Departmental Seminar. 2011. UC Davis.\
+
