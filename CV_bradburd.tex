@@ -9,7 +9,13 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{setspace}
 \usepackage{fontspec}
-\setmainfont{Corbel}
+\setmainfont[%
+  Path = /Library/Fonts/,
+  UprightFont = Corbeln,
+  BoldFont = Corbelb,
+  ItalicFont = Corbeli,
+  Extension = .ttf
+]{Corbel}
 \usepackage{breakurl}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.295\textwidth}}
 \setlength{\parindent}{0in}
@@ -111,8 +117,16 @@ East Lansing, MI, 48824 \hfill \\
 %
 \begin{tabular}{>{\everypar{\hangindent1cm}}p{0.95\textwidth}p{0.05\textwidth}}
 \hfill\\
-%\underline{In review} \hfill\\
-%\vspace{-0.1cm}
+\underline{Preprints and In Review} \hfill\\
+\vspace{-0.1cm}
+\textbf{Bradburd, G.S.}, P.L. Ralph, and G.M. Coop. (2017). 
+Inferring continuous and discrete population structure across space \underline{bioRxiv} 
+\href{https://doi.org/10.1101/189688}{https://doi.org/10.1101/189688}. \\ 
+%
+\vspace{-0.1cm}
+Shaffer, H.B., McCartney-Melstad, E., Ralph, P.L., \textbf{Bradburd, G.S.}, Lundgren, E., Vu, J., Hagerty, B., Sandmeier, F., Weitzman, C., Tracy, C.R.
+(2017). Desert Tortoises in the Genomic Age: Population Genetics and the Landscape \underline{bioRxiv}
+\href{https://doi.org/10.1101/195743}{https://doi.org/10.1101/195743}.\\
 %
 \vspace{0.2cm}
 %
