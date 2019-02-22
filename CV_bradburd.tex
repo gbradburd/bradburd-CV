@@ -9,6 +9,8 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{setspace}
 \usepackage{fontspec}
+\usepackage{etaremune}
+\usepackage{fancyhdr}
 \setmainfont[%
   Path = /Library/Fonts/,
   UprightFont = Corbeln,
@@ -22,7 +24,12 @@
 \usepackage[bottom]{footmisc}
 \usepackage{tabularx}
 \usepackage{array}
-\begin{document}
+\pagestyle{fancy}
+\renewcommand{\headrule}{}
+\fancyhead[R]{\textit{Bradburd - Curriculum Vitae}}
+%
+%
+\begin{document}\thispagestyle{empty}
 \pagenumbering{gobble}
 %
 \begin{huge}
@@ -46,33 +53,200 @@ East Lansing, MI, 48824 \hfill software: \href{https://github.com/gbradburd}{git
 \vspace{-0.6cm}
 \rule{470pt}{0.4pt}
 %
-\begin{tabular}{@{}p{0.1\textwidth}p{0.50\textwidth}R@{}}
+\begin{tabular}{p{0.25\textwidth} p{0.5\textwidth} p{0.175\textwidth}} 
+%L{0.25\textwidth} L{0.5\textwidth} c
+%p{0.22\textwidth}p{0.49\textwidth}p{0.2\textwidth}
 \\
-\bf{Asst. Prof} & \it{Michigan State University} & Aug. 2016 - present\\
+\bf{Asst. Prof} & \it{Michigan State University} & \hfill 2017 - present\\
  & \hspace{0.5cm}Department of Integrative Biology & \\
  & \hspace{0.5cm}Ecology, Evolutionary Biology, and Behavior Group& \\
 %
-%\hfill\\
 %
-\bf{Postdoc} & \it{University of California, Berkeley} & Sept. 2015 - Jul. 2016\\
+\bf{Fixed-term Asst. Prof} & \it{Michigan State University} & \hfill 2016 - 2017\\
+ & \hspace{0.5cm}Department of Integrative Biology & \\
+ & \hspace{0.5cm}Ecology, Evolutionary Biology, and Behavior Group& \\
+%
+%
+\bf{Postdoc} & \it{University of California, Berkeley} & \hfill 2015 - 2016\\
  & \hspace{0.5cm}Museum of Vertebrate Zoology & \\
  & \hspace{0.5cm}Department of Env.\ Sci.\ Pol.\ and Mgmt& \\
  & \hspace{0.5cm}Advisors: Michael Nachman, Bree Rosenblum & \\ 
 %
-%\hfill\\
 %
-\bf{PhD} & \it{University of California, Davis}  & Sept. 2009 - Aug. 2015\\
+\bf{PhD} & \it{University of California, Davis}  & \hfill 2009 - 2015\\
  & \hspace{0.5cm}Population Biology Graduate Group & \\
  & \hspace{0.5cm}Department of Ecology and Evolutionary Biology & \\
  & \hspace{0.5cm}Advisors: Graham Coop, Brad Shaffer & \\ 
 %
-%\hfill\\
 %
-\textbf{BS} & \it{Yale University} & Sept. 2004 - May 2008 \\
+\textbf{BS} & \it{Yale University} & \hfill 2004 - 2008 \\
 & \hspace{0.5cm}Ecology and Evolutionary Biology & \\
 & \hspace{0.5cm}Honors Thesis Advisor: Tom Near & \\
 \end{tabular}
 %
+\section*{SOFTWARE}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.975\textwidth}}
+\hfill\\
+%
+Bradburd, G.S. (2018). \textbf{conStruct}. A genetic clustering method that accounts for isolation by distance. R package version v1.0.3.
+\href{https://cran.r-project.org/web/packages/conStruct/index.html}{https://cran.r-project.org/web/packages/conStruct/index.html}\\
+%
+\vspace{-0.1cm}
+%
+Bradburd, G.S. (2016). \textbf{SpaceMix}. A program for estimating geogenetic maps from allele frequency data. R package version 0.13.
+\href{https://github.com/gbradburd/SpaceMix}{https://github.com/gbradburd/SpaceMix}\\
+%
+\vspace{-0.1cm}
+%
+Bradburd, G.S. (2013). \textbf{BEDASSLE}. Bayesian Estimation of Differentiation in Alleles by Spatial Structure and Local Ecology. 
+R package version 1.5. \href{https://cran.r-project.org/web/packages/BEDASSLE}{https://cran.r-project.org/web/packages/BEDASSLE}\\
+%
+\end{tabular}
+%
+\section*{FUNDING}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.8\textwidth}p{0.15\textwidth}}
+\hfill\\
+%
+\textbf{NSF Dimensions of Biodiversity} (2017-2021) & \hfill \textbf{\$1,846,134} \\
+\hspace{4.5mm}Diversification of sensory systems in novel habitat: enhanced vision or compensation in other modalities?\\
+\hspace{4.5mm}(co-PIs: J.W. Boughman, H. Hofmann, J. Keagy, D. Stenkamp)\\
+%
+\vspace{-0.1cm}
+\textbf{Beacon - NSF Center for the Study of Evolution in Action} (2016-present) & \hfill \textbf{\$127,579}\\
+\hspace{4.5mm}Evolution of sensory systems in response to loss of visual information\\
+\hspace{4.5mm}(co-PIs: J.W. Boughman, H. Hofmann, J. Keagy, D. Stenkamp)\\
+%
+\vspace{-0.1cm}
+\textbf{NSF Doctoral Dissertation Improvement Grant (DDIG)} (2014-15) & \hfill \textbf{\$13,918}\\
+\hspace{4.5mm}The effect of intraspecific host variation on the structure of parasite populations\\
+\hspace{4.5mm}(co-PIs: Graham Coop)\\
+\end{tabular}
+%
+\section*{PUBLICATIONS}
+\vspace{-0.6cm}
+\rule{470pt}{0.4pt}
+%
+\newcommand\pubspace{0.01}
+\newcommand{\bburd}[1]{{\underline{\smash{#1}}}}
+\newcommand{\journal}[1]{{\textbf{#1}}}
+%
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.95\textwidth}}
+\hfill\\
+\textit{\underline{\smash{Preprints and In Review}}} \hfill\\
+\vspace{0.05cm}
+%
+\bburd{Bradburd, G.S.} and P.L. Ralph.
+Spatial population genetics: It's about time. 
+\textit{(in review)}.\\
+%
+\vspace{\pubspace cm}
+L.E. Grieneisen, M.J.E.Charpentier, S.C. Alberts, R. Blekhman, \bburd{G.S. Bradburd}, J. Tung, E.A. Archie.
+Genes, geology, and germs: gut microbiota across a primate hybrid zone are explained by site soil properties, not host species.
+\textit{(in review)}.\\
+%
+\vspace{\pubspace cm}
+Fitzpatrick, S.W. \bburd{G.S. Bradburd}, C.T. Kremer, P.E. Salerno, L.M.Angeloni, W.C.Funk.
+Genetic rescue without genomic swamping in wild Trinidadian guppy populations.
+\textit{(in revision)}.\\
+%
+\vspace{\pubspace cm}
+Shaffer, H.B., McCartney-Melstad, E., Ralph, P.L., \bburd{Bradburd, G.S.}, Lundgren, E., Vu, J., Hagerty, B., Sandmeier, F., Weitzman, C., Tracy, C.R.
+(2017).
+Desert Tortoises in the genomic age: population genetics and the landscape \underline{bioRxiv}.\\
+%
+\vspace{0.2cm}
+%
+\textit{\underline{\smash{Published and Accepted Papers}}} \hfill (*denotes equal authorship)\\
+%
+\begin{etaremune}
+\vspace{-0.2cm}
+%
+%
+\item 
+\bburd{Bradburd, G.S.}, G.M. Coop*, and P.L. Ralph*. (2018). 
+Inferring continuous and discrete population genetic structure across space. 
+\journal{Genetics} 210(1):33-52.
+%
+%
+\vspace{\pubspace cm}
+\item
+Weber, J.N., \bburd{G.S. Bradburd}, Y.E. Stuart, W.E. Stutz, D.I. Bolnick. (2017). 
+Partitioning the effects of isolation by distance, environment, and physical barriers on genomic divergence between parapatric threespine stickleback.
+\journal{Evolution} 71(2):342-56.
+%
+%
+\vspace{\pubspace cm}
+\item
+Hoban, S.*, J. L. Kelley*, K. E. Lotterhos*, M. F. Antolin, \bburd{G.S. Bradburd}, D. B. Lowry, M. L. Poss, L. K. Reed, A. Storfer, M. C. Whitlock. (2016).
+Finding the genomic basis of local adaptation in non-model organisms: pitfalls, practical solutions, and future directions. 
+\journal{American Naturalist} 188(4).
+%
+%
+\vspace{\pubspace cm}
+\item
+\bburd{Bradburd, G.S.}, P.L. Ralph, G.M. Coop. (2016). 
+A Spatial Framework for Understanding Population Structure and Admixture. 
+\journal{PLoS Genetics} 12(1): e1005703.
+%
+%
+\vspace{\pubspace cm}
+\item
+Hammock, B.G., S. Lesmeister, I. Flores, \bburd{G.S. Bradburd}, F.H. Hammock, S.J. Teh. (2016). 
+Low food availability narrows the tolerance of the copepod \textit{Eurytemora affinis} to salinity, but not to temperature. 
+\journal{Estuaries and Coasts}.  39(1):189-200.
+%
+%
+\vspace{\pubspace cm}
+\item
+Agrawal, A.A., A.P. Hastings, \bburd{G.S. Bradburd}, E.C. Woods, T. Z{\"u}st, J. Harvey, T. Bukovinszky. (2015).
+Evolution of plant growth and defense in a continental introduction. 
+\journal{American Naturalist} 186(1): 1-15.
+%
+%
+\vspace{\pubspace cm}
+\item
+Wang, I.J.* and \bburd{G.S. Bradburd}.* (2014). 
+Isolation by Environment. 
+\journal{Molecular Ecology} 23: 5649-5662.
+%
+%
+\vspace{\pubspace cm}
+\item
+\bburd{Bradburd, G.S.}, P.L. Ralph, and G.M. Coop. (2013). 
+Disentangling the effects of geographic and ecological isolation on genetic differentiation. 
+\journal{Evolution} 67: 3258-3273.
+%
+%
+\vspace{\pubspace cm}
+\item
+Rejmanek, D, P. Freycon, \bburd{G.S. Bradburd}, J. Dinstell, and J. Foley.  (2013). 
+Unique strains of \textit{Anaplasma phagocytophilum} segregate among diverse questing and non-questing \textit{Ixodes} tick species in the western United States.  
+\journal{Ticks and Tick-borne Diseases} 4: 482-487.
+%
+%
+\vspace{\pubspace cm}
+\item
+Rejmanek, D., \bburd{G.S. Bradburd}, and J. Foley.  (2012). 
+Molecular characterization reveals distinct genospecies of \textit{Anaplasma phagocytophilum} from diverse North American hosts.	
+\journal{Journal of Medical Microbiology} 61: 204-212.
+%
+%
+\vspace{\pubspace cm}
+\item
+Near, T.J., C.M. Bossu, \bburd{G.S. Bradburd}, R.L. Carlson, R.C. Harrington, P.R. Hollingsworth Jr., B.P. Keck, D.A. Etnier.  (2011). 
+Phylogeny and temporal diversification of darters (\textit{Percidae: Etheostomatinae}).  
+\journal{Systematic Biology} 60: 565-595
+%
+%
+\end{etaremune}
+%
+\end{tabular}
+%
+%\newpage
 \section*{HONORS, AWARDS, \& FELLOWSHIPS}
 \vspace{-0.6cm}
 \rule{470pt}{0.4pt}
@@ -88,126 +262,25 @@ East Lansing, MI, 48824 \hfill software: \href{https://github.com/gbradburd}{git
 \textbf{Graduate Scholars Fellowship} in Population Biology, UC Davis (\$30,000) & \hfill  2009-10\\
 %\hspace{4.5mm}Awarded in recognition of outstanding academic record and promise of productive scholarship\\
 \textbf{Environmental Internship Award} Yale University (\$6,000) & \hfill 2006-7\\ 
-\textbf{Richter Summer Travel Fellowship} Yale University (\$1,000)  & \hfill 2007\\
+\textbf{Richter Fellowship} Yale University (\$1,000)  & \hfill 2007\\
 \textbf{Mellon Forum Research Grant} Yale University (\$500) & \hfill 2007\\
 %\textbf{Environmental Internship Award} Yale University (\$2,000) & \hfill 2006\\
 \end{tabular}
 %
-\section*{FUNDING}
-\vspace{-0.6cm}
-\rule{470pt}{0.4pt}
-\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.8\textwidth}p{0.15\textwidth}}
-%
-\textbf{NSF Dimensions of Biodiversity} (2017-2021) & \hfill \textbf{\$1,846,134} \\
-\hspace{4.5mm}Diversification of sensory systems in novel habitat: enhanced vision or compensation in other modalities?\\
-\hspace{4.5mm}(co-PIs: J.W. Boughman, H. Hofmann, J. Keagy, D. Stenkamp)\\
-%
-\textbf{Beacon - NSF Center for the Study of Evolution in Action} (2016-present) & \hfill \textbf{\$127,579}\\
-\hspace{4.5mm}Evolution of sensory systems in response to loss of visual information\\
-\hspace{4.5mm}(co-PIs: J.W. Boughman, H. Hofmann, J. Keagy, D. Stenkamp)\\
-%
-\textbf{NSF Doctoral Dissertation Improvement Grant (DDIG)} (2014-15) & \hfill \textbf{\$13,918}\\
-\hspace{4.5mm}The effect of intraspecific host variation on the structure of parasite populations\\
-\hspace{4.5mm}(co-PIs: Graham Coop)\\
-\end{tabular}
-%
-\section*{PUBLICATIONS}
+\section*{TEACHING}
 \vspace{-0.6cm}
 \rule{470pt}{0.4pt}
 %
-\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.95\textwidth}p{0.05\textwidth}}
-\hfill\\
-\underline{Preprints and In Review} \hfill\\
-\vspace{-0.1cm}
-%
-\vspace{-0.1cm}
-Shaffer, H.B., McCartney-Melstad, E., Ralph, P.L., \textbf{Bradburd, G.S.}, Lundgren, E., Vu, J., Hagerty, B., Sandmeier, F., Weitzman, C., Tracy, C.R.
-(2017). Desert Tortoises in the Genomic Age: Population Genetics and the Landscape \underline{bioRxiv}
-\href{https://doi.org/10.1101/195743}{https://doi.org/10.1101/195743}.\\
-%
-\vspace{0.2cm}
-%
-\underline{Published and Accepted Papers} \hfill (*denotes equal authorship)\\
-%
-\vspace{-0.1cm}
-\textbf{Bradburd, G.S.}, G.M. Coop*, and P.L. Ralph*. (2018). 
-Inferring continuous and discrete population genetic structure across space. 
-\underline{Genetics} 210(1):33-52. \\ 
-%
-\vspace{-0.1cm}
-Weber, J.N., \textbf{G.S. Bradburd}, Y.E. Stuart, W.E. Stutz, D.I. Bolnick. (2017).
-Partitioning the effects of isolation by distance, environment, and physical barriers 
-on genomic divergence between parapatric threespine stickleback.
-\underline{Evolution} 71(2):342-56. \\
-%
-\vspace{-0.1cm}
-Hoban, S.*, J. L. Kelley*, K. E. Lotterhos*, M. F. Antolin, \textbf{G.S. Bradburd}, D. B. Lowry, M. L. Poss, L. K. Reed, A. Storfer, M. C. Whitlock. (2016). Finding the genomic basis of local adaptation in non-model organisms: pitfalls, practical solutions, and future directions. \underline{American Naturalist} 188(4). \\
-%
-\vspace{-0.1cm}
-\textbf{Bradburd G.S.}, P.L. Ralph, G.M. Coop. (2016). A Spatial Framework for Understanding Population Structure and Admixture. \underline{PLoS Genetics} 12(1): e1005703.\\
-%
-\vspace{-0.1cm}
-Hammock, B.G., S. Lesmeister, I. Flores, \textbf{G.S. Bradburd}, F.H. Hammock, S.J. Teh. (2016). Low food availability narrows the tolerance of the copepod \textit{Eurytemora affinis} to salinity, but not to temperature. \underline{Estuaries and Coasts}.  39(1):189-200.\\
-%
-\vspace{-0.1cm}
-Agrawal, A.A., A.P. Hastings, \textbf{G.S. Bradburd}, E.C. Woods, T. Z{\"u}st, J. Harvey, T. Bukovinszky. (2015).
-Evolution of plant growth and defense in a continental introduction. \underline{American Naturalist} 186(1): E1-E15.\\
-%
-\vspace{-0.1cm}
-Wang, I.J.* and \textbf{G.S. Bradburd}.* (2014). Isolation by Environment. \underline{Molecular Ecology} 23: 5649-5662.  & \hfill\\
-%
-\vspace{-0.1cm}
-%
-\textbf{Bradburd, G.S.}, P.L. Ralph, and G.M. Coop. (2013). Disentangling the effects of geographic and ecological isolation on genetic differentiation. \underline{Evolution} 67: 3258-3273. & \hfill \\
-%
-\vspace{-0.1cm}
-%
-Rejmanek, D, P. Freycon, \textbf{G.S. Bradburd}, J. Dinstell, and J. Foley.  (2013). Unique strains of \textit{Anaplasma phagocytophilum} segregate among diverse questing and non-questing \textit{Ixodes} tick species in the western United States.  \underline{Ticks and Tick-borne Diseases} 4: 482-487. & \hfill\\
-%
-\vspace{-0.1cm}
-%
-Rejmanek, D., \textbf{G.S. Bradburd}, and J. Foley.  (2012). Molecular characterization reveals distinct genospecies of \textit{Anaplasma phagocytophilum} from diverse North American hosts.	\underline{Journal of Medical Microbiology} 61: 204-212. & \hfill \\
-%
-\vspace{-0.1cm}
-%
-Near, T.J., C.M. Bossu, \textbf{G.S. Bradburd}, R.L. Carlson, R.C. Harrington, P.R. Hollingsworth Jr., B.P. Keck, D.A. Etnier.  (2011). Phylogeny and temporal diversification of darters (\textit{Percidae: Etheostomatinae}).  \underline{Systematic Biology} 60: 565-595& \hfill\\
-%
-\end{tabular}
-%
-%\newpage
-\section*{SOFTWARE}
-\vspace{-0.6cm}
-\rule{470pt}{0.4pt}
-\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.95\textwidth}p{0.05\textwidth}}
-\hfill\\
-%
-Bradburd, G.S. 2018. conStruct. A genetic clustering method that accounts for isolation by distance. R package version 0.0.0.9000.
-\href{https://cran.r-project.org/web/packages/conStruct/index.html}{https://cran.r-project.org/web/packages/conStruct/index.html}\\
-%
-Bradburd, G.S. 2016. SpaceMix. A program for estimating geogenetic maps from allele frequency data. R package version 0.13.
-\href{https://github.com/gbradburd/SpaceMix}{https://github.com/gbradburd/SpaceMix}\\
-%
-\vspace{-0.1cm}
-%
-Bradburd, G.S. 2013. BEDASSLE. Bayesian Estimation of Differentiation in Alleles by Spatial Structure and Local Ecology. 
-R package version 1.5. \href{https://cran.r-project.org/web/packages/BEDASSLE}{https://cran.r-project.org/web/packages/BEDASSLE}\\
-%
-\end{tabular}
-%
-\section*{TEACHING EXPERIENCE}
-\vspace{-0.6cm}
-\rule{470pt}{0.4pt}
-%
-\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.60\textwidth}p{0.15\textwidth}p{0.15\textwidth}}
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.60\textwidth}p{0.15\textwidth}p{0.175\textwidth}}
 \hfill\\
 Evolutionary Biology (IBio 849) & Instructor & \hfill 2018-present \\
-Intro Statistical Methods in Ecology/Evolution (IBio 830) & Instructor & \hfill 2017-present \\
-Evolution Discussion Group (IBio 895) & Instructor & \hfill 2017-18 \\
-UCLA/La Kretz Center Workshop in Conservation Genomics & Instructor & \hfill 2014, 16 \\
+Intro to Statistical Methods in Ecology/Evolution (IBio 830) & Instructor & \hfill 2017-present \\
+Evolution Discussion Group (IBio 895) & Instructor & \hfill 2017-present \\
+%UCLA/La Kretz Center Workshop in Conservation Genomics & Instructor & \hfill 2014, 16, 19 \\
 EVE100 Introduction to Evolution & TA & \hfill 2015	\\
 EVE103 Macroevolution, Speciation, and Phylogeny (Lecture, Lab) & TA & \hfill 2014 \\
 Herpetology (Field, Lab, Lecture) & TA & \hfill 2012\\
-Bodega Bay Applied Phylogenetics Workshop & TA & \hfill 2012-13\\
+%Bodega Bay Applied Phylogenetics Workshop & TA & \hfill 2012-13\\
 \end{tabular}
 %
 %
@@ -215,7 +288,7 @@ Bodega Bay Applied Phylogenetics Workshop & TA & \hfill 2012-13\\
 \vspace{-0.6cm}
 \rule{470pt}{0.4pt}
 %
-\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.4\textwidth}p{0.4\textwidth}p{0.1\textwidth}}
+\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.4\textwidth}p{0.4\textwidth}p{0.125\textwidth}}
 \hfill\\
 Ecological Society of America & Landscape Genetics (student-organized) & \hfill 2018 \\
 %
@@ -273,8 +346,6 @@ Bay Area Population Genomics (BAPG) & \hfill 2014\\
 E\&EB Senior Symposium, Yale University & \hfill 2008\\
 \end{tabular}
 
-\pagebreak
-
 \section*{MENTORSHIP \& ADVISING}
 \vspace{-0.6cm}
 \rule{470pt}{0.4pt}
@@ -289,18 +360,21 @@ Dr. Emily Puckett & \hfill 2017 - 2018\\
 %
 \textbf{\underline{Undergraduates}}\\
 %
-Sarah Frocillo & \hfill Aug 2017 - present\\
-Lindsay Guare & \hfill Aug 2017 - present\\
-Nick Stants & \hfill Aug 2017 - present\\
+Lindsay Guare & \hfill 2017 - present\\
+Josh Confer & \hfill 2018 - present\\
+Sarah Frocillo & \hfill 2017 - 2018\\
+Nick Stants & \hfill 2017 - 2018\\
 \\
 %
-\textbf{\underline{Grad student committees}}\\
+\textbf{\underline{Graduate student committees}}\\
 %
-Emily Dolson & \hfill 2017-present\\
-Ava Garrison & \hfill 2017-present\\
-Miranda Wade & \hfill 2018-present\\
-Jason Olsen & \hfill 2018-present\\
+Devin Lake & \hfill 2019-present\\
 Viviana Ortiz Londono & \hfill 2018-present\\
+Jason Olsen & \hfill 2018-present\\
+Miranda Wade & \hfill 2018-present\\
+Ava Garrison & \hfill 2017-present\\
+Emily Dolson & \hfill 2017-present\\
+
 \end{tabular}
 
 \section*{SERVICE \& LEADERSHIP}
@@ -308,9 +382,45 @@ Viviana Ortiz Londono & \hfill 2018-present\\
 \rule{470pt}{0.4pt}
 \begin{tabular}{>{\everypar{\hangindent1cm}}p{0.8\textwidth}p{0.15\textwidth}}
 \hfill\\
-Strategic Hiring Planning Committee, Dept. Integrative Biology & \hfill 2018\\
+\textit{\underline{\smash{National/International Service}}}\\
+\vspace{-0.1cm}
+\textbf{Organizing Committee} Midwest Population Genetics Conference & \hfill 2016-present\\
 %
-Organizing Committee, Midwest Population Genetics Conference & \hfill 2016-present\\
+\textbf{Course Instructor} UCLA/La Kretz Center Workshop in Conservation & \hfill 2014, 16, 19 \\
+%
+%
+\textbf{Reviewer} including: 
+Evolution;
+Genetics;
+Systematic Biology; 
+American Journal of Human Genetics;
+Heredity;
+Molecular Ecology;
+Proceedings of the Royal Society B;
+Molecular Ecology Resources;
+Methods in Ecology and Evolution;
+Molecular Phylogenetics and Evolution;
+New Phytologist;
+Bioinformatics;
+Ecological Monographs;
+NSERC\\
+\textbf{Society Memberships}
+Society for the Study of Evolution (SSE); 
+%Society for Molecular Biology and Evolution (SMBE); 
+American Society of Naturalists (ASN);
+Genetics Society of America (GSA)\\
+%Diversity and Distributions;
+%Integrative and Comparative Biology;
+%Nature - Scientific Reports;
+%Genes, Genomes, Genetics (G3);
+%Ecology and Evolution;
+%Australian National University
+\vspace{0.3cm}
+%
+%
+\textit{\underline{\smash{Institutional Service}}}\\
+\vspace{-0.1cm}
+Strategic Hiring Planning Committee, Dept. Integrative Biology & \hfill 2018-present\\
 %
 Curriculum Planning Committee (Intro to Evolution - IBio 445) & \hfill 2016-17\\
 %
@@ -326,28 +436,9 @@ Graduate Student Mentor & \hfill 2009-2015\\
 %
 \end{tabular}
 %
-\section*{REVIEWER}
-\vspace{-0.6cm}
-\rule{470pt}{0.4pt}
-\\\\
-Evolution;
-Genetics;
-Heredity;
-American Journal of Human Genetics;
-Molecular Ecology;
-Molecular Ecology Resources;
-Methods in Ecology and Evolution;
-Proceedings of the Royal Society B;
-Molecular Phylogenetics and Evolution
-New Phytologist;
-Bioinformatics;
-Diversity and Distributions;
-Integrative and Comparative Biology;
-Nature - Scientific Reports;
-Genes, Genomes, Genetics (G3);
-NSERC;
 
 
+\end{document}
 
 \section*{SOCIETY MEMBERSHIPS}
 \vspace{-0.6cm}
@@ -356,9 +447,7 @@ NSERC;
 Society for the Study of Evolution (SSE); 
 %Society for Molecular Biology and Evolution (SMBE); 
 American Society of Naturalists (ASN);
-Genetics Society of America
-
-\end{document}
+Genetics Society of America (GSA)
 
 \section*{PREVIOUS APPOINTMENTS}
 \vspace{-0.6cm}
