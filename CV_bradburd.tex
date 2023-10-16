@@ -19,6 +19,11 @@
   ItalicFont = Corbeli,
   Extension = .ttf
 ]{Corbel}
+
+\newif\ifpm
+\pmfalse
+%\pmtrue
+
 \usepackage{breakurl}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.295\textwidth}}
 \setlength{\parindent}{0in}
@@ -120,7 +125,9 @@ University of Michigan \hfill software: \href{https://github.com/gbradburd}{gith
 \pubyear{2023}.
 A spatial approach to jointly estimate Wright's neighborhood size and long-term effective population size.
 \textit{(in revision)}.
-\underline{bioRxiv}.\\[\weirdpubspace em]
+\underline{bioRxiv}.
+\ifpm PMCID: PMC10029013 \fi
+\\[\weirdpubspace em]
 
 %
 %
@@ -140,14 +147,16 @@ A spatial approach to jointly estimate Wright's neighborhood size and long-term 
 Functional genomic diversity is correlated with 
 neutral genomic diversity in populations of an endangered rattlesnake.
 \journal{Proceedings of the National Academy of Sciences}
-\textit{(accepted)}.
+120 (43).
 \\[\weirdpubspace em]
+%
 %
 \rule{0pt}{3ex}
 24. *Week, B and \bburd{GS Bradburd}.
 \pubyear{2023}.
-A model of coevolution and local adaptation between hosts and parasites in continuous space.
+Host-Parasite coevolution in continuous space leads to variation in local adaptation across spatial scales.
 \journal{American Naturalist} \textit{(accepted)}.\\
+%
 %
 \rule{0pt}{3ex}
 23. Crandall, ED, RH Toczydlowski, L Liggins, 
@@ -158,20 +167,28 @@ SR Queeno, T Trinh, C A Weyand, A Bentley, J Deck,
 C Riginos, \bburd{GS Bradburd}, RJ Toonen.
 \pubyear{2023}.
 The importance of timely metadata curation to the global surveillance of genetic diversity.
-\journal{Conservation Biology} 37, e14061.\\ 
+\journal{Conservation Biology} 37, e14061.
+\ifpm PMID: 36704891 \fi
+\\ 
 %
 %
 \rule{0pt}{3ex}
 22. Martin, BS, \bburd{GS Bradburd}, LJ Harmon, MG Weber.
 \pubyear{2022}.
 Modeling the evolution of rates of continuous trait evolution.
-\journal{Systematic Biology} 72 (3), 590-605.\\
+\journal{Systematic Biology} 72 (3), 590-605.
+\ifpm PMCID: PMC10276627 \fi
+\\
+%
 %
 \rule{0pt}{3ex}
 21. *Clark, M, \bburd{GS Bradburd}, M Akopyan, A Vega, E Rosenblum, J Robertson.
 \pubyear{2022}.
 Genetic isolation by distance underlies color pattern divergence in red-eyed treefrogs (\textit{Agalychnis callidryas}).
-\journal{Molecular Ecology}. 31: 1666-1681.\\[\weirdpubspace em]
+\journal{Molecular Ecology}. 31: 1666-1681.
+\ifpm PMCID: PMC8923152 \fi
+\\[\weirdpubspace em]
+%
 %
 \rule{0pt}{3ex}
 20. *Toczydlowski, R, L Liggins, MR Gaither, TJ Anderson, RL Barton, 
@@ -180,120 +197,167 @@ N Himmelsbach, AE Holmes, SR Queeno, T Trinh, CA Weyand,
 \bburd{GS Bradburd}, C Riginos, RJ Toonen, ED Crandall.
 \pubyear{2021}.
 Poor data stewardship will hinder global genetic diversity surveillance.
-\journal{Proceedings of the National Academy of Sciences} 118 (34). \\[\pubspace em]
+\journal{Proceedings of the National Academy of Sciences} 118 (34). 
+\ifpm PMCID: PMC8403888 \fi
+\\[\pubspace em]
+%
 %
 \rule{0pt}{3ex}
 19. *Puckett, E, S Murphy, \bburd{GS Bradburd}.
 \pubyear{2021}.
 Phylogeographic analysis delimits three evolutionary significant units of least chipmunks in North America and identifies unique genetic diversity within the imperiled Pe{\~{n}}asco population.
-\journal{Ecology and Evolution} 11: 12114-12128.\\[\pubspace em]
+\journal{Ecology and Evolution} 11: 12114-12128.
+\ifpm PMCID: PMC8427584 \fi
+\\[\pubspace em]
+%
 %
 18. Schweizer, RS, MR Jones, \bburd{GS Bradburd}, JF Storz, N Senner, C Wolf, ZA Cheviron. 
 \pubyear{2021}.
 Broad concordance in the spatial distribution of adaptive and neutral genetic variation along an elevational cline in deer mice.
-\journal{Molecular Biology and Evolution} 38 (10), 4286-‌4300.\\[\pubspace em]
+\journal{Molecular Biology and Evolution} 38 (10), 4286-‌4300.
+\ifpm PMCID: PMC8476156 \fi
+\\[\pubspace em]
 %
 %
 17. *Hancock, ZB, ES Lehmberg, \bburd{GS Bradburd}.
 \pubyear{2021}.
 Neo-darwinism still haunts evolutionary theory: A modern perspective on Charlesworth, Lande, and Slatkin (1982).
-\journal{Evolution} 75: 1244-1255.\tabularnewline[\weirdpubspace em]
+\journal{Evolution} 75: 1244-1255.
+\ifpm PMCID: PMC8979413 \\ [\pubspace em]
+\else \tabularnewline[\weirdpubspace em]
+\fi
 %
 %
 16. Rothstein, A, R Knapp, \bburd{GS Bradburd}, D Boiano, EB Rosenblum.
 \pubyear{2020}.
 Stepping into the past to conserve the future: archived skin swabs from extant and extinct populations inform genetic management of an endangered amphibian.
-\journal{Molecular Ecology} 29 (14): 2598-2611.\tabularnewline[\pubspace em]
+\journal{Molecular Ecology} 29 (14): 2598-2611.
+\ifpm  Research funded by NSF - no PMCID number. \tabularnewline  \\[-5pt]
+\else \tabularnewline[\pubspace em]
+\fi
 %
 %
 15. Fitzpatrick, SW \bburd{GS Bradburd}, CT Kremer, PE Salerno, LM Angeloni, WC Funk.
 \pubyear{2020}.
 Genomic and fitness consequences of genetic rescue in wild populations.
-\journal{Current Biology} 30: 1-6.\tabularnewline[\weirdpubspace em]
+\journal{Current Biology} 30: 1-6.
+\ifpm  Research funded by NSF - no PMCID number. \tabularnewline \\[-5pt]
+\else  \\[\weirdpubspace em] 
+\fi
 %
 %
 14. Schweizer, RM, JP Velotta, CM Ivy, MR Jones, SM Muir, \bburd{GS Bradburd}, JF Storz, GR Scott, ZA Cheviron.
 \pubyear{2019}.
 Physiological and genomic evidence that a transcription factor contributes to adaptive cardiovascular function in high-altitude deer mice.
-\journal{PLoS Genetics} 15 (11), e1008420-e1008420.\\[\weirdpubspace em]
+\journal{PLoS Genetics} 15 (11), e1008420-e1008420.
+\ifpm PMCID: PMC6837288 \fi
+\\[\weirdpubspace em]
 %
 %
 13. \rule{0pt}{3ex}\bburd{Bradburd, GS} and PL Ralph.
 \pubyear{2019}.
 Spatial population genetics: It's about time. 
-\hangindent1cm \journal{Annual Reviews in Ecology, Evolution, and Systematics} 50: 427-449.\\[1.9em]
+\hangindent1cm \journal{Annual Reviews in Ecology, Evolution, and Systematics} 50: 427-449.
+\ifpm Research funded by NSF - no PMCID number. \fi
+\\[1.9em]
 %
 %
 12. Grieneisen, LE, MJE Charpentier, SC Alberts, R Blekhman, \bburd{GS Bradburd}, J Tung, EA Archie.
 \pubyear{2019}. 
 Genes, geology, and germs: gut microbiota across a primate hybrid zone are explained by site soil properties, not host species.
-\journal{Proceedings of the Royal Society B} 286: 20190431.\\[\pubspace em]
+\journal{Proceedings of the Royal Society B} 286: 20190431.
+\ifpm PMCID: PMC6501927 \fi
+\\[\pubspace em]
 %
 %
 11. \rule{0pt}{1ex}\bburd{Bradburd, GS}, GM Coop, and PL Ralph.
 \pubyear{2018}. 
 Inferring continuous and discrete population genetic structure across space. 
-\journal{Genetics} 210: 33-52.\\[\weirdpubspace em]
+\journal{Genetics} 210: 33-52.
+\ifpm PMCID: PMC6116973 \fi
+\\[\weirdpubspace em]
 %
 %
-10, Weber, JN, \bburd{GS Bradburd}, YE Stuart, WE Stutz, DI Bolnick.
+10. Weber, JN, \bburd{GS Bradburd}, YE Stuart, WE Stutz, DI Bolnick.
 \pubyear{2017}. 
 Partitioning the effects of isolation by distance, environment, and physical barriers on genomic divergence between parapatric threespine stickleback.
-\journal{Evolution} 71: 342-56.\\[\pubspace em]
+\journal{Evolution} 71: 342-56.
+\ifpm Research funded by NSF - no PMCID number. \fi
+\\[\pubspace em]
 %
 %
 9. Hoban, S, JL Kelley, KE Lotterhos, MF Antolin, \bburd{GS Bradburd}, DB Lowry, ML Poss, LK Reed, A Storfer, MC Whitlock.
 \pubyear{2016}.
 Finding the genomic basis of local adaptation in non-model organisms: pitfalls, practical solutions, and future directions. 
-\journal{American Naturalist} 188: 379-397.\\[\pubspace em]
+\journal{American Naturalist} 188: 379-397.
+\ifpm PMCID: PMC5457800 \fi
+\\[\pubspace em]
 %
 %
 8. \rule{0pt}{1ex}\bburd{Bradburd, GS}, PL Ralph, GM Coop.
 \pubyear{2016}. 
 A Spatial Framework for Understanding Population Structure and Admixture. 
-\journal{PLoS Genetics} 12: e1005703.\\[\weirdpubspace em]
+\journal{PLoS Genetics} 12: e1005703.
+\ifpm PMCID: PMC4714911\fi
+\\[\weirdpubspace em]
 %
 %
 7. Hammock, BG, S Lesmeister, I Flores, \bburd{GS Bradburd}, FH Hammock, SJ Teh.
 \pubyear{2016}. 
 Low food availability narrows the tolerance of the copepod \textit{Eurytemora affinis} to salinity, but not to temperature. 
-\journal{Estuaries and Coasts}.  39: 189-200.\\[\pubspace em]
+\journal{Estuaries and Coasts}.  39: 189-200.
+\ifpm Research funded by NSF - no PMCID number. \fi
+\\[\pubspace em]
 %
 %
 6. Agrawal, AA, AP Hastings, \bburd{GS Bradburd}, EC Woods, T Z{\"u}st, J Harvey, T Bukovinszky.
 \pubyear{2015}.
 Evolution of plant growth and defense in a continental introduction. 
-\journal{American Naturalist} 186: 1-15.\\[\weirdpubspace em]
+\journal{American Naturalist} 186: 1-15.
+\ifpm Research funded by NSF - no PMCID number. \tabularnewline \\[-5pt]
+\else \\[\weirdpubspace em]
+\fi
 %
 %
 5. Wang, IJ and \bburd{GS Bradburd}.
 \pubyear{2014}. 
 Isolation by Environment. 
-\journal{Molecular Ecology} 23: 5649-5662.\\[1 em]
-%
+\journal{Molecular Ecology} 23: 5649-5662.
+\ifpm Research funded by NSF - no PMCID number. \tabularnewline \\[-5pt]
+\else \tabularnewline \\[-5pt]
+\fi
+%%
 %
 4. \rule{0pt}{1ex}\bburd{Bradburd, GS}, PL Ralph, and GM Coop.
 \pubyear{2013}. 
 Disentangling the effects of geographic and ecological isolation on genetic differentiation. 
-\journal{Evolution} 67: 3258-3273.\\[\weirdpubspace em]
+\journal{Evolution} 67: 3258-3273.
+\ifpm PMCID: PMC3808528 \fi
+\\[\weirdpubspace em]
 %
 %
 3. Rejmanek, D, P Freycon, \bburd{GS Bradburd}, J Dinstell, and J Foley.
 \pubyear{2013}.
 Unique strains of \textit{Anaplasma phagocytophilum} segregate among diverse questing and non-questing \textit{Ixodes} tick species in the western United States.  
-\journal{Ticks and Tick-borne Diseases} 4: 482-487.\\[\pubspace em]
+\journal{Ticks and Tick-borne Diseases} 4: 482-487.
+\ifpm PMCID: PMC3833925 \fi
+\\[\pubspace em]
 %
 %
 2. Rejmanek, D, \bburd{GS Bradburd}, and J Foley.
 \pubyear{2012}.
 Molecular characterization reveals distinct genospecies of \textit{Anaplasma phagocytophilum} from diverse North American hosts.	
-\journal{Journal of Medical Microbiology} 61: 204-212.\\[\pubspace em]
+\journal{Journal of Medical Microbiology} 61: 204-212.
+\ifpm PMCID: PMC3352158 \fi
+\\[\pubspace em]
 %
 %
 1. Near, TJ, CM Bossu, \bburd{GS Bradburd}, RL Carlson, RC Harrington, PR Hollingsworth Jr., BP Keck, DA Etnier.
 \pubyear{2011}. 
 Phylogeny and temporal diversification of darters (\textit{Percidae: Etheostomatinae}).  
-\journal{Systematic Biology} 60: 565-595.\\[\weirdpubspace em]
+\journal{Systematic Biology} 60: 565-595.
+\ifpm Research funded by NSF - no PMCID number. \fi
+\\[\weirdpubspace em]
 %
 %
 %\end{etaremune}
@@ -315,17 +379,17 @@ Desert Tortoises in the genomic age: population genetics and the landscape. \und
 \vspace{-0.6cm}
 %
 \textit{\underline{External}}\\
-\textbf{NSF Division of Environmental Biology} (2022-2026) & \hfill \textbf{\$1,536,017} \\
+\textbf{NSF Division of Environmental Biology} Award\# 2223962 (2022-2026) & \hfill \textbf{\$1,536,017} \\
 \hspace{4.5mm} The interaction of selection, pleiotropy, and drift in phenotypic evolution\\
-\hspace{4.5mm}(PI: J Conner; co-PIs: G Bradburd, R Last, T Juenger)\\ \vspace{-0.1cm}
+\hspace{4.5mm}(PI: J Conner; co-PIs: G Bradburd\ifpm \,(5\%)\fi, R Last, T Juenger)\\ \vspace{-0.1cm}
 %
-\textbf{NIH Early Stage Investigator MIRA (R35)} (2020-2025) & \hfill \textbf{\$1,849,678} \\
+\textbf{NIH NIGMS Early Stage Investigator MIRA (R35)} Award\# R35GM137919 (2020-2025) & \hfill \textbf{\$1,849,678} \\
 \hspace{4.5mm} Incorporating geography into statistical methods for analysis of population genomic DNA\\
-\hspace{4.5mm}(PI: G Bradburd)\\ \vspace{-0.1cm}
+\hspace{4.5mm}(PI: G Bradburd\ifpm \,(50\%)\fi)\\ \vspace{-0.1cm}
 %
-\textbf{NSF Bridging Ecology \& Evolution} (2020-2023) & \hfill \textbf{\$920,700} \\
+\textbf{NSF Bridging Ecology \& Evolution} Award\# 2016569 (2020-2024) & \hfill \textbf{\$920,700} \\
 \hspace{4.5mm} Testing eco-evolutionary effects of genetic drift and gene flow in stressful environments\\
-\hspace{4.5mm}(PI: S Fitzpatrick; co-PIs: B Rothermel, G Bradburd)\\ \vspace{-0.1cm}
+\hspace{4.5mm}(PI: S Fitzpatrick; co-PIs: B Rothermel, G Bradburd\ifpm \,(5\%)\fi)\\ \vspace{-0.1cm}
 %
 \textbf{NSF Dimensions of Biodiversity} (2017-2022) & \hfill \textbf{\$1,118,520} \\
 \hspace{4.5mm}Diversification of sensory systems in novel habitat: enhanced vision or compensation in other modalities?\\
@@ -451,8 +515,8 @@ Dr. Emily Dolson, \hspace{0.25cm}PhD, Computer Science and Engineering, MSU &\hf
 \hfill\\
 Introduction to Statistical Model Building in R (EEB 303) & Instructor & \hfill 2023-present \\
 Evolution (EEB 390) & Instructor & \hfill 2023-present \\
-Evolutionary Biology (IBio 849) & Instructor & \hfill 2018-present \\
-Intro to Statistical Methods in Ecology/Evolution (IBio 830) & Instructor & \hfill 2017-present \\
+Evolutionary Biology (IBio 849) & Instructor & \hfill 2018-2022 \\
+Intro to Statistical Methods in Ecology/Evolution (IBio 830) & Instructor & \hfill 2017-2022 \\
 Evolution Discussion Group (IBio 895) & Instructor & \hfill 2017-present \\
 %UCLA/La Kretz Center Workshop in Conservation Genomics & Instructor & \hfill 2014, 16, 19 \\
 %EVE100 Introduction to Evolution & TA & \hfill 2015	\\
@@ -518,7 +582,7 @@ Collegiate Fellows Faculty Search Committee (EEB Dept.) & \hfill 2023\\
 %
 \emph{Ad hoc} Faculty Search Committee (EEB Dept.) & \hfill 2023\\
 %
-Seminar Committee (EEB Dept.)  & \hfill 2022-present\\
+Seminar Committee (EEB Dept.)  & \hfill 2022-2023\\
 %
 Diversity, Equity, and Inclusion Committee (Dept. Integrative Biology) & \hfill 2019-2022\\
 %
