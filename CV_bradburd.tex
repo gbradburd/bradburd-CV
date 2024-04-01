@@ -21,8 +21,8 @@
 ]{Corbel}
 
 \newif\ifpm
-%\pmfalse
-\pmtrue
+\pmfalse
+%\pmtrue
 
 \usepackage{breakurl}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.295\textwidth}}
@@ -113,6 +113,7 @@ University of Michigan \hfill software: \href{https://github.com/gbradburd}{gith
 \newcommand\pubspace{3.2}
 \newcommand\weirdpubspace{1.9}
 \newcommand{\bburd}[1]{{\underline{\smash{#1}}}}
+\newcommand{\labbie}[1]{{*#1}}
 \newcommand{\journal}[1]{{\textbf{#1}}}
 \newcommand{\pubyear}[1]{{\textbf{#1}}}
 \newcommand{\dohang}{\hangindent1cm\hangafter1 }
@@ -123,13 +124,23 @@ University of Michigan \hfill software: \href{https://github.com/gbradburd}{gith
 %
 \rule{0pt}{3ex} 
 %
-*Hancock, Z, *RH Toczydlowski, \bburd{GS Bradburd}.
+\labbie{Grundler, MC}, J Terhorst, \bburd{GS Bradburd}.
+\pubyear{2024}.
+A geographic history of human genetic ancestry.
+\underline{bioRxiv}.\\\\
+%
+\labbie{Clark, MI}, SW Fitzpatrick, \bburd{GS Bradburd}.
+\pubyear{2024}.
+Pitfalls and windfalls of detecting demographic declines using population genetics in long-lived species.
+\underline{bioRxiv}.\\[\weirdpubspace em]
+%
+\labbie{Hancock, Z}, \labbie{RH Toczydlowski}, \bburd{GS Bradburd}.
 \pubyear{2023}.
 A spatial approach to jointly estimate Wright's neighborhood size and long-term effective population size.
 \textit{(in revision)}.
 \underline{bioRxiv}.
 \ifpm PMCID: PMC10029013 \fi
-\\[\weirdpubspace em]
+\\
 %
 %
 %
@@ -143,15 +154,15 @@ A spatial approach to jointly estimate Wright's neighborhood size and long-term 
 %
 %
 \rule{0pt}{3ex}
-26. *Lewanski, AL, *MC Grundler, \bburd{GS Bradburd}.
-\pubyear{2023}.
+26. \labbie{Lewanski, AL}, \labbie{MC Grundler}, \bburd{GS Bradburd}.
+\pubyear{2024}.
 The era of the ARG: An introduction to ancestral recombination graphs and their significance in empirical evolutionary genomics.
 \journal{PLoS Genetics}.
 20(1): e1011110.
 \ifpm PMCID: PMC10796009\fi
 \\[\pubspace em]
 %
-25. *Week, B and \bburd{GS Bradburd}.
+25. \labbie{Week, B} and \bburd{GS Bradburd}.
 \pubyear{2024}.
 Host-parasite coevolution in continuous space leads to variation in local adaptation across spatial scales.
 \journal{American Naturalist}
@@ -172,7 +183,7 @@ neutral genomic diversity in populations of an endangered rattlesnake.
 %
 %
 \rule{0pt}{3ex}
-23. Crandall, ED, *RH Toczydlowski, L Liggins, 
+23. Crandall, ED, \labbie{RH Toczydlowski}, L Liggins, 
 AE Holmes, M Ghoojaei, MR Gaither, BE Wham, 
 AL Pritt, C Noble, TJ Anderson, RL Barton, JT Berg, 
 SG Beskid, A Delgado, E Farrell, N Himmelsbach, 
@@ -195,7 +206,7 @@ Modeling the evolution of rates of continuous trait evolution.
 %
 %
 \rule{0pt}{3ex}
-21. *Clark, M, \bburd{GS Bradburd}, M Akopyan, A Vega, E Rosenblum, J Robertson.
+21. \labbie{Clark, M}, \bburd{GS Bradburd}, M Akopyan, A Vega, E Rosenblum, J Robertson.
 \pubyear{2022}.
 Genetic isolation by distance underlies color pattern divergence in red-eyed treefrogs (\textit{Agalychnis callidryas}).
 \journal{Molecular Ecology}. 31: 1666-1681.
@@ -204,7 +215,7 @@ Genetic isolation by distance underlies color pattern divergence in red-eyed tre
 %
 %
 \rule{0pt}{3ex}
-20. *Toczydlowski, R, L Liggins, MR Gaither, TJ Anderson, RL Barton, 
+20. \labbie{Toczydlowski, RH}, L Liggins, MR Gaither, TJ Anderson, RL Barton, 
 JT Berg, SG Beskid, B Davis, A Delgado, E Farrell, M Ghoojaei, 
 N Himmelsbach, AE Holmes, SR Queeno, T Trinh, CA Weyand, 
 \bburd{GS Bradburd}, C Riginos, RJ Toonen, ED Crandall.
@@ -216,7 +227,7 @@ Poor data stewardship will hinder global genetic diversity surveillance.
 %
 %
 \rule{0pt}{3ex}
-19. *Puckett, E, S Murphy, \bburd{GS Bradburd}.
+19. \labbie{Puckett, E}, S Murphy, \bburd{GS Bradburd}.
 \pubyear{2021}.
 Phylogeographic analysis delimits three evolutionary significant units of least chipmunks in North America and identifies unique genetic diversity within the imperiled Pe{\~{n}}asco population.
 \journal{Ecology and Evolution} 11: 12114-12128.
@@ -232,7 +243,7 @@ Broad concordance in the spatial distribution of adaptive and neutral genetic va
 \\[\pubspace em]
 %
 %
-17. *Hancock, ZB, ES Lehmberg, \bburd{GS Bradburd}.
+17. \labbie{Hancock, ZB}, ES Lehmberg, \bburd{GS Bradburd}.
 \pubyear{2021}.
 Neo-darwinism still haunts evolutionary theory: A modern perspective on Charlesworth, Lande, and Slatkin (1982).
 \journal{Evolution} 75: 1244-1255.
@@ -387,7 +398,7 @@ Desert Tortoises in the genomic age: population genetics and the landscape. \und
 \section*{FUNDING}
 \vspace{-0.6cm}
 \rule{470pt}{0.4pt}
-\begin{longtable}{>{\everypar{\dohang}\dohang\raggedright\arraybackslash}p{0.8\textwidth}p{0.15\textwidth}}
+\begin{longtable}{>{\everypar{\dohang}\dohang\raggedright\arraybackslash}p{0.83\textwidth}p{0.15\textwidth}}
 %\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.8\textwidth}p{0.15\textwidth}}
 %
 \vspace{-0.6cm}
@@ -406,14 +417,13 @@ Desert Tortoises in the genomic age: population genetics and the landscape. \und
 \hspace{4.5mm}(PI: S Fitzpatrick; co-PIs: B Rothermel, G Bradburd\ifpm \,(5\%)\fi)\\ \vspace{-0.1cm}
 %
 \textbf{NSF Dimensions of Biodiversity} (2017-2022) & \hfill \textbf{\$1,118,520} \\
-\hspace{4.5mm}Diversification of sensory systems in novel habitat: enhanced vision or compensation in other modalities?\\
+\hspace{4.5mm}Diversification of sensory systems in novel habitat\\
 \hspace{4.5mm}(PI: J Boughman; co-PIs: G Bradburd, H Hofmann, J Keagy, D Stenkamp)\\ \vspace{-0.1cm}
 %
 \textbf{NSF Doctoral Dissertation Improvement Grant (DDIG)} (2014-15) & \hfill \textbf{\$13,918}\\
 \hspace{4.5mm}The effect of intraspecific host variation on the structure of parasite populations\\
-\hspace{4.5mm}(PI: G Bradburd; co-PI: G Coop)\\ \vspace{-0.1cm}\\
-
-\\
+\hspace{4.5mm}(PI: G Bradburd; co-PI: G Coop)\\ \vspace{-0.1cm}
+%\\\\
 \textit{\underline{Internal}}\\
 \textbf{MSU Strategic Partnership Grant} (2021-2022) & \hfill \textbf{\$400,000}\\
 \hspace{4.5mm}The Institute for Biodiversity, Ecology, Evolution, and Macrosystems (IBEEM)\\
@@ -425,7 +435,7 @@ Desert Tortoises in the genomic age: population genetics and the landscape. \und
 %
 \end{longtable}
 \vspace{-0.3cm}
-\section*{SOFTWARE}
+\section*{SOFTWARE} %ADD GAIA
 \vspace{-0.6cm}
 \rule{470pt}{0.4pt}
 \begin{tabular}{>{\everypar{\hangindent1cm}}p{0.975\textwidth}}
@@ -455,9 +465,10 @@ R package version 1.5. \href{https://cran.r-project.org/web/packages/BEDASSLE}{h
 %
 \textbf{\underline{Postdocs}}\\
 \rule{0pt}{3ex}Mike Grundler & \hfill 2022-present\\
-Phil Gerrish & \hfill 2022-2024\\
 Zach Hancock & \hfill 2021-present\\
 Leonard Jones & \hfill 2021-present\\
+Phil Gerrish & \hfill 2022-2024\\
+\hspace{0.5cm} \textit{current position}: Researcher, Los Alamos National Lab \\
 Bob Week & \hfill 2020-2022\\
 \hspace{0.5cm} \textit{current position}: Postdoctoral Researcher, University of Oregon \\
 Rachel Toczydlowski & \hfill 2019-2022\\
@@ -478,8 +489,10 @@ Alex Lewanski & \hfill 2022-present\\
 \\
 %
 \textbf{\underline{Graduate student committees}}\\
-\rule{0pt}{3ex}
+\rule{0pt}{3ex}Kiran Kumar, \hspace{0.25cm}PhD, Biostatistics, University of Michigan &\hfill 2024-present\\
+Tristan Schramer, \hspace{0.25cm}PhD, EEB, University of Michigan &\hfill 2024-present\\
 Teresa Sauer, \hspace{0.25cm}PhD, EEB, University of Michigan &\hfill 2024-present\\
+Yu Kai Tan, \hspace{0.25cm}PhD, EEB, University of Michigan &\hfill 2023-present\\
 Sofia Maria Backlund, \hspace{0.25cm}PhD, Institute of Science and Technology (Vienna) &\hfill 2023-present\\
 Jimmy Bingman, \hspace{0.25cm}PhD, Plant Biology, MSU &\hfill 2023-present\\
 Matheus Januario Lopes de Sousa, \hspace{0.25cm}PhD, EEB, University of Michigan &\hfill 2022-present\\
@@ -547,8 +560,10 @@ Evolution Discussion Group (IBio 895) & Instructor & \hfill 2017-present \\
 \rule{470pt}{0.4pt}
 \begin{longtable}{>{\everypar{\dohang}\dohang\raggedright\arraybackslash}p{0.8\textwidth}p{0.15\textwidth}}
 %\begin{tabular}{>{\everypar{\hangindent1cm}}p{0.8\textwidth}p{0.15\textwidth}}
-\textit{\underline{\smash{National/International Service}}}\\
-\rule{0pt}{3ex}\textbf{Organizing Committee} Midwest Population Genetics Conference & \hfill 2016-present\\
+\textit{\underline{\smash{National/International/Society Service}}}\\
+\rule{0pt}{3ex}\textbf{Organizer} SMBE Symposium: "Spatial population genetics: where are we now?" (co-organized with J. Novembre, UChicago) & \hfill 2024\\ 
+%
+\textbf{Organizing Committee} Midwest Population Genetics Conference & \hfill 2016-present\\
 %
 \textbf{Steering Committee} NSF EVO-LTER Award: Leveraging long-term ecological research in grasslands: facilitating collaborations between ecologists and evolutionary biologists & \hfill 2021-present \\
 \textbf{Course Instructor} UCLA/La Kretz Center Workshop in Conservation Genomics & \hfill 2014, 16, 19 \\
@@ -591,7 +606,9 @@ Genetics Society of America (GSA)\\\\
 %
 %
 \textit{\underline{\smash{Institutional Service}}}\\
-\rule{0pt}{3ex}Executive Committee (EEB Dept.) & \hfill 2023-2025\\
+\rule{0pt}{3ex}Nominating Committee (College of LSA) & \hfill 2024-present\\
+%
+Executive Committee (EEB Dept.) & \hfill 2023-2025\\
 %
 Executive Committee, UM Genome Science Training Program  & \hfill 2023-present\\
 %
