@@ -34,6 +34,7 @@
   UprightFont = Corbel,
   BoldFont = Corbelb,
   ItalicFont = Corbeli,
+  BoldItalicFont = Corbel_Bold_Italic,
   Extension = .ttf
 ]{Corbel}
 
